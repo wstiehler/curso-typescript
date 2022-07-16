@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+    <header class="row col mt-2">
+        <section class="card">
+            <div class="card-body">Exercicio Aula 03 - CRUD Aluno</div>
+        </section>
+    </header>
+
+    <main class="row col mt-5">
+        <section class="col-4 row">
+            <div class="card">
+                <div class="card-header">Formulário</div>
+                <form>
+                    <div class="card-body">
+                        <label class="label">Nome</label>
+                        <input type="text" class="form-control" placeholder="Informe seu nome" id="nome" required>
+
+                        <label class="label">Idade</label>
+                        <input type="number" class="form-control" placeholder="Informe sua idade" id="idade">
+
+                        <label class="label">Camada Preferida</label>
+                        <input type="text" class="form-control" placeholder="Informe sua camada preferida" ,
+                            id="camadaPreferida">
+
+                        <label class="label">Linguagens</label>
+                        <input type="text" class="form-control"
+                            placeholder="Informe as linguagens separadas por virgula" , id="linguagens">
+                    </div>
+                    <div class="card-footer">
+                        <button type="reset" class="btn btn-outline-warning">Limpar campos</button>
+                        <button type="submit" class="btn btn-outline-success">Adicionar</button>
+                    </div>
+                </form>
+                <div class="card-body"></div>
+            </div>
+        </section>
+        <section class="col">
+            <div class="card">
+                <div class="card-header">Lista de Alunos</div>
+                <div class="card-body">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Preferencia</th>
+                            <th>Linguagem</th>
+                            <th>Ações</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Teste</td>
+                                <td>99</td>
+                                <td>Binário</td>
+                                <td>Cobol,Pearl,Sinais de Fumaça</td>
+                                <td>
+                                    <button class="btn btn-danger btn-sm">Exluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="/js/exercicio_aula03.js" type="module"></script>
+</body>
+
+</html>
